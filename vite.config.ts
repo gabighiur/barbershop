@@ -137,7 +137,10 @@ export default defineConfig({
     }),
 
     // https://github.com/feat-agency/vite-plugin-webfont-dl
-    WebfontDownload(),
+    WebfontDownload([
+      'https://fonts.googleapis.com/css2?family=Metamorphous&display=swap',
+
+    ]),
 
     // https://github.com/webfansplz/vite-plugin-vue-devtools
     VueDevTools(),

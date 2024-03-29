@@ -1,14 +1,44 @@
 button:
-  about: About
-  back: Back
-  go: GO
-  home: Home
-  toggle_dark: Toggle dark mode
-  toggle_langs: Change languages
+  about: Despre
+  back: Înapoi
+  go: MERGE
+  home: Acasă
+  toggle_dark: Comutare mod întunecat
+  toggle_langs: Schimbare limbi
 intro:
-  desc: Opinionated Vite Starter Template
-  dynamic-route: Demo of dynamic route
-  hi: Hi, {name}!
-  aka: Also known as
-  whats-your-name: What's your name?
-not-found: Not found
+  desc: Șablon de început Vite părtinitor
+  dynamic-route: Demonstrație a rutei dinamice
+  hi: Salut, {name}!
+  aka: Cunoscut și ca
+  whats-your-name: Cum te numești?
+not-found: Nu a fost găsit
+nav:
+  item1: Acasă
+  item2: Despre
+  item3: Servicii
+  item4: Rezervare
+  item5: Echipa
+header:
+  title: GOLDMAN
+  desc: Aurul frumuseții masculine.
+story:
+  sub: Despre noi
+  title: Experiența Noastră
+  desc: >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+services:
+  price: Prețuri și Servicii
+team:
+  title: Echipa Noastră
+  desc: Descoperă echipa noastră talentată de barbers, pasionați de arta tunsului
+  members:
+    - name: Bonnie Green
+      description: Bonnie drives the technical strategy of the flowbite platform and brand.
+    - name: Jese Leos
+      description: Jese drives the technical strategy of the flowbite platform and brand.
+    - name: Michael Gough
+      description: Michael drives the technical strategy of the flowbite platform and brand.
+    - name: Lana Byrd
+      description: Lana drives the technical strategy of the flowbite platform and brand.
+footer:
+  rights: All Rights Reserved

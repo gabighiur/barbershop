@@ -10,8 +10,18 @@ declare module 'vue' {
     README: typeof import('./components/README.md')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Services: typeof import('./components/Services.vue')['default']
+    Story: typeof import('./components/Story.vue')['default']
+    Team: typeof import('./components/Team.vue')['default']
+    Testimonial: typeof import('./components/Testimonial.vue')['default']
+    TheCallButton: typeof import('./components/TheCallButton.vue')['default']
     TheCounter: typeof import('./components/TheCounter.vue')['default']
+    TheDesktopNavbar: typeof import('./components/TheDesktopNavbar.vue')['default']
     TheFooter: typeof import('./components/TheFooter.vue')['default']
+    TheHeader: typeof import('./components/TheHeader.vue')['default']
     TheInput: typeof import('./components/TheInput.vue')['default']
+    TheLogo: typeof import('./components/TheLogo.vue')['default']
+    TheMobileNavbar: typeof import('./components/TheMobileNavbar.vue')['default']
+    TheNavbar: typeof import('./components/TheNavbar.vue')['default']
   }
 }

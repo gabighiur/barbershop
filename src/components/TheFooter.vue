@@ -1,37 +1,42 @@
-<script setup lang="ts">
-import { availableLocales, loadLanguageAsync } from '~/modules/i18n'
-
-const { t, locale } = useI18n()
-
-async function toggleLocales() {
-  // change to some real logic
-  const locales = availableLocales
-  const newLocale = locales[(locales.indexOf(locale.value) + 1) % locales.length]
-  await loadLanguageAsync(newLocale)
-  locale.value = newLocale
-}
+<script setup>
+import Logo from '~/imgs/logow.png'
 </script>
 
 <template>
-  <nav flex="~ gap-4" mt-6 justify-center text-xl>
-    <RouterLink icon-btn to="/" :title="t('button.home')">
-      <div i-carbon-campsite />
-    </RouterLink>
+  <footer>
+    <div class="mx-auto mb-8 px-8 py-8 container md:py-8">
+      <div class="flex items-center justify-between lg:flex">
+        <!-- Left section: Address and phone -->
+        <div>
+          <div class="flex items-center">
+            <div i-carbon:location-filled class="mr-2 text-xl text-gray-600 dark:text-gray-400" />
+            <span text-left>Bulevardul Theodor Pallady 1, București 032251</span>
+          </div>
+          <div class="mt-2 flex items-center">
+            <div i-carbon:phone class="mr-2 text-xl text-gray-600 dark:text-gray-400" />
+            <span>0728 797 179</span>
+          </div>
+          <div class="mt-2 flex items-center">
+            <a href="https://www.instagram.com/goldman.barbershop/" target="_blank" rel="noopener noreferrer" class="mr-2">
+              <div i-carbon:logo-instagram hover:text-amber-200 class="text-xl text-gray-600 dark:text-gray-400" />
+            </a>
+            <a href="https://www.facebook.com/p/Gold-Man-Barbershop-100075883749894/" target="_blank" rel="noopener noreferrer">
+              <div i-carbon:logo-facebook class="text-xl text-gray-600 dark:text-gray-400 hover:text-amber-200" />
+            </a>
+          </div>
+        </div>
 
-    <button icon-btn :title="t('button.toggle_dark')" @click="toggleDark()">
-      <div i="carbon-sun dark:carbon-moon" />
-    </button>
+        <!-- Right section: Social media icons -->
+        <div class="flex items-center space-x-4">
+          <img :src="Logo" class="mx-auto w-30" alt="Hyenas Transparent NFT">
+        </div>
+      </div>
 
-    <a icon-btn :title="t('button.toggle_langs')" @click="toggleLocales()">
-      <div i-carbon-language />
-    </a>
-
-    <RouterLink icon-btn to="/about" :title="t('button.about')" data-test-id="about">
-      <div i-carbon-dicom-overlay />
-    </RouterLink>
-
-    <a icon-btn rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank" title="GitHub">
-      <div i-carbon-logo-github />
-    </a>
-  </nav>
+      <!-- Copyright -->
+      <hr class="my-4 border-gray-200 sm:mx-auto dark:border-gray-700">
+      <p class="text-center text-sm text-gray-500 dark:text-gray-400">
+        &copy;2023 <a href="#" class="hover:underline">GoldMan Barbershop</a>. {{ $t('footer.rights') }}.
+      </p>
+    </div>
+  </footer>
 </template>
