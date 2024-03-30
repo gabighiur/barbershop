@@ -7,7 +7,7 @@ import Logo from '~/imgs/logow.png'
     <div class="mx-auto mb-8 px-8 py-8 container md:py-8">
       <div class="flex items-center justify-between lg:flex">
         <!-- Left section: Address and phone -->
-        <div>
+        <div >
           <div class="flex items-center">
             <div i-carbon:location-filled class="icon-btn" />
             <span icon-btn text-left>Bulevardul Theodor Pallady 1, București 032251</span>
@@ -18,7 +18,7 @@ import Logo from '~/imgs/logow.png'
           </div>
           <div class="mt-2 flex items-center">
             <a href="https://www.instagram.com/goldman.barbershop/" target="_blank" rel="noopener noreferrer" class="mr-2">
-              <div i-carbon:logo-instagram icon-btn class="text-xl text-gray-600 dark:text-gray-400" />
+              <div i-carbon:logo-instagram icon-btn />
             </a>
             <a href="https://www.facebook.com/p/Gold-Man-Barbershop-100075883749894/" target="_blank" rel="noopener noreferrer">
               <div i-carbon:logo-facebook class="text-xl icon-btn" />
@@ -33,9 +33,9 @@ import Logo from '~/imgs/logow.png'
       </div>
 
       <!-- Copyright -->
-      <hr class="my-4 border-gray-200 sm:mx-auto dark:border-gray-700">
-      <p class="text-center text-sm text-gray-500 dark:text-gray-400">
-        &copy;2023 <a href="#" class="hover:underline">GoldMan Barbershop</a>. {{ $t('footer.rights') }}.
+      <hr class="my-4 border-gray-200 sm:mx-auto">
+      <p class="text-center text-sm text-gray-500 ">
+        &copy;2024 <a href="#" class="hover:underline">GoldMan Barbershop</a>. {{ $t('footer.rights') }}.
       </p>
     </div>
   </footer>
