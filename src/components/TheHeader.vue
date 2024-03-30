@@ -2,7 +2,7 @@
 import videoClip from '~/imgs/header3.mp4'
 function callPhoneNumber() {
   // Replace '1234567890' with your phone number
-  const phoneNumber = '+1234567890'
+  const phoneNumber = '+40728797179'
   window.location.href = `tel:${phoneNumber}`
 }
 </script>

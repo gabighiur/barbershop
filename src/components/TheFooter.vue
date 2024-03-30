@@ -9,19 +9,19 @@ import Logo from '~/imgs/logow.png'
         <!-- Left section: Address and phone -->
         <div>
           <div class="flex items-center">
-            <div i-carbon:location-filled class="mr-2 text-xl text-gray-600 dark:text-gray-400" />
-            <span text-left>Bulevardul Theodor Pallady 1, București 032251</span>
+            <div i-carbon:location-filled class="icon-btn" />
+            <span icon-btn text-left>Bulevardul Theodor Pallady 1, București 032251</span>
           </div>
           <div class="mt-2 flex items-center">
-            <div i-carbon:phone class="mr-2 text-xl text-gray-600 dark:text-gray-400" />
-            <span>0728 797 179</span>
+            <div i-carbon:phone class="icon-btn" />
+            <span icon-btn>0728 797 179</span>
           </div>
           <div class="mt-2 flex items-center">
             <a href="https://www.instagram.com/goldman.barbershop/" target="_blank" rel="noopener noreferrer" class="mr-2">
-              <div i-carbon:logo-instagram hover:text-amber-200 class="text-xl text-gray-600 dark:text-gray-400" />
+              <div i-carbon:logo-instagram icon-btn class="text-xl text-gray-600 dark:text-gray-400" />
             </a>
             <a href="https://www.facebook.com/p/Gold-Man-Barbershop-100075883749894/" target="_blank" rel="noopener noreferrer">
-              <div i-carbon:logo-facebook class="text-xl text-gray-600 dark:text-gray-400 hover:text-amber-200" />
+              <div i-carbon:logo-facebook class="text-xl icon-btn" />
             </a>
           </div>
         </div>

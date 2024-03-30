@@ -24,7 +24,7 @@
         </h2>
         <p class="text-lg text-white">
           Fă-ți programare ->
-          <button class="text-white hover:text-amber-200" @click="callPhoneNumber">
+          <button class="text-white icon-btn" @click="callPhoneNumber">
             <div class="flex items-center">
               <div class="mr-1 text-xl" i-carbon:phone-filled />
             </div>
@@ -32,7 +32,7 @@
           și te așteptăm cu drag la locație
         </p>
         <div class="flex items-center">
-          <div class="mr-2 text-xl" i-carbon:location-filled />
+          <div class="mr-2 text-white icon-btn text-xl" i-carbon:location-filled />
           <span class="text-white">Bulevardul Theodor Pallady 1, București 032251</span>
         </div>
       </div>
