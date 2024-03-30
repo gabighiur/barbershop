@@ -2,7 +2,7 @@
   <main
     bg-teal-950
     px-0 py-0
-    text="center gray-700 dark:gray-200"
+    text="center"
   >
     <TheNavbar />
     <RouterView />
