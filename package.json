@@ -44,7 +44,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^0.40.3",
     "@iconify-json/carbon": "^1.1.31",
-    "@intlify/shared": "9.3.0-beta.24",
+    "@intlify/shared": "9.10.2",
     "@intlify/unplugin-vue-i18n": "^0.12.3",
     "@nomicfoundation/hardhat-toolbox": "^3.0.0",
     "@openzeppelin/contracts": "^4.9.6",
