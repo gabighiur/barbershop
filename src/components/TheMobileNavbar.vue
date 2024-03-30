@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import { computed, ref } from 'vue'
+import { ref } from 'vue'
 import { availableLocales, loadLanguageAsync } from '~/modules/i18n'
 
 const { t, locale } = useI18n()
@@ -24,17 +24,11 @@ async function toggleLocales() {
   locale.value = newLocale
 }
 
-interface MenuItem {
-  label: string
-  route: string
-  section: string
-}
-
-const nonHamburgerItems: MenuItem[] = computed(() => {
-  return [HOME, STORY, SERVICES, ABOUT]
+const nonHamburgerItems = computed(() => {
+  return []
 })
 
-const mobileMenuItems: MenuItem[] = computed(() => {
+const mobileMenuItems = computed(() => {
   return [HOME, STORY, SERVICES, ABOUT]
 })
 
@@ -45,7 +39,7 @@ function callPhoneNumber() {
 </script>
 
 <template>
-  <nav :class="{ ' z-50 sticky top-0 max-h-20 overflow-hidden': !menuOpen, 'z-50 sticky top-0 transition-all duration-600 ease-in': menuOpen }" class="flex items-center justify-between bg-teal-950 p-4">
+  <nav :class="{ ' z-50 sticky top-0 max-h-20 overflow-hidden': !menuOpen, 'z-50 sticky top-0 ': menuOpen }" class="flex items-center justify-between bg-teal-950 p-4">
     <!-- Non-Hamburger Menu Items -->
     <div class="gap-4 text-amber-100 md:flex">
       <router-link
@@ -60,8 +54,8 @@ function callPhoneNumber() {
     </div>
 
     <!-- Mobile Navbar -->
-    <transition name="fade">
-      <div v-if="menuOpen" class="fade-content rounded-r-b fixed left-0 top-0 h-full w-full flex flex-row items-center justify-center bg-teal-900 p-8 px-8 text-left text-4xl">
+    <transition name="slide">
+      <div v-if="menuOpen" class="rounded-r-b fixed left-0 top-0 h-full w-full flex flex-row items-center justify-center bg-teal-900 p-8 px-8 text-left text-4xl">
         <!-- Left Section: Menu Items, Button, Language Dropdown, Social Links -->
         <div class="flex flex-col items-center justify-center">
           <!-- Mobile Menu Items -->
@@ -110,11 +104,8 @@ function callPhoneNumber() {
 
     <!-- Hamburger Button -->
     <button class="group h-11 w-11 flex flex-col items-end justify-center md:hidden" @click="menuOpen = !menuOpen">
-      <!-- First Hamburger Line -->
       <div :class="`${hamburgerLine} ${menuOpen ? 'rotate-45 translate-y-1 opacity-100 group-hover:opacity-100 transition-transform duration-300' : 'opacity-100 group-hover:opacity-100'}`" />
-      <!-- Second Hamburger Line -->
       <div :class="`${hamburgerLine} ${menuOpen ? 'opacity-0' : 'opacity-100 group-hover:opacity-100'}`" />
-      <!-- Third Hamburger Line -->
       <div :class="`${hamburgerLine} ${menuOpen ? '-rotate-45 -translate-y-2 opacity-100 group-hover:opacity-100 transition-transform duration-300' : 'opacity-100 group-hover:opacity-100'}`" />
     </button>
   </nav>
@@ -122,15 +113,14 @@ function callPhoneNumber() {
 </template>
 
 <style scoped>
-.fade-content {
-  transition:
-    opacity 0.5s,
-    transform 0.5s;
+.slide-leave-active,
+.slide-enter-active {
+  transition: 1s;
 }
-
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
-  transform: translateY(-50px);
+.slide-enter {
+  transform: none;
+}
+.slide-leave-to {
+  transform: translate(-100%, 0);
 }
 </style>

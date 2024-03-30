@@ -1,9 +1,6 @@
 // @ts-check
-import antfu from '@antfu/eslint-config'
+import antfuConfig from '@antfu/eslint-config';
 
-export default antfu(
-  {
-    unocss: true,
-    formatters: true,
-  },
-)
+export default {
+  ...antfuConfig.rules,
+};
