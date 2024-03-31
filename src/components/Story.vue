@@ -20,7 +20,7 @@
       <!-- Text section -->
       <div class="mb-8 text-center md:mb-0 md:w-1/2 md:pr-10 md:text-left">
         <h2 class="mb-4 text-3xl text-white font-bold">
-          Te așteptăm!
+          {{$t('story.callheader')}}
         </h2>
         <p class="text-lg text-white">
           Fă-ți programare ->
@@ -29,7 +29,7 @@
               <div class="mr-1 text-xl" i-carbon:phone-filled />
             </div>
           </button>
-          și te așteptăm cu drag la locație
+          și te așteptăm la locație
         </p>
         <div class="flex items-center">
           <div class="mr-2 text-white icon-btn text-xl" i-carbon:location-filled />

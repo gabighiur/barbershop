@@ -76,8 +76,8 @@ function callPhoneNumber() {
             </a>
           </div>
           <hr class="w-sm border-1 border-amber-100">
-          <div class="mb-4 mt-20 w-30 opacity-30">
-            <TheLogo />
+          <div class="mb-4 flex items-center justify-center mr-5 mt-10 w-40 opacity-70">
+            <TheLogo/>
           </div>
         </div>
       </div>
@@ -101,7 +101,7 @@ function callPhoneNumber() {
 <style scoped>
 .slide-leave-active,
 .slide-enter-active {
-  transition: 1s;
+  transition: 0.3s ease;
 }
 .slide-enter {
   transform: none;

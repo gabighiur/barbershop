@@ -28,11 +28,10 @@ export default {
   <div class="mx-auto max-w-6xl w-full px-5 py-16 text-amber-100 md:py-24">
     <div class="mx-auto max-w-xl text-center">
       <h1 class="mb-5 text-4xl text-white font-bold md:text-5xl">
-        Ce spun clienții noștri.
+        {{$t('testimonial.title')}}
       </h1>
       <h3 class="mb-5 text-lg font-light md:text-xl">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      </h3>
+        {{$t('testimonial.desc')}}</h3>
       <div class="mb-10 text-center">
         <span class="ml-1 inline-block h-1 w-1 rounded-full bg-amber-200" />
         <span class="ml-1 inline-block h-1 w-3 rounded-full bg-amber-200" />
